@@ -12,6 +12,8 @@ const config = {
   // experimental: {
   //   optimizePackageImports: ["@mantine/core", "@mantine/hooks"]
   // }
+  swcMinify: true,
+  output: "standalone",
 };
 
 export default config;
