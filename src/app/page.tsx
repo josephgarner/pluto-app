@@ -1,19 +1,33 @@
-import { Text, Title, Center, Code } from "@mantine/core";
+import {
+  PasswordInput,
+  Title,
+  Flex,
+  Code,
+  Container,
+  Center,
+  Button,
+  Stack,
+  TextInput,
+} from "@mantine/core";
+import Image from "next/image";
 
 export default async function Home() {
   return (
-    <>
-      <Center>
-        <Title>Mantine, TRPC, Prisma, NextAuth + App Directory Template</Title>
-      </Center>
-
-      <Center>
-        <Text>🎈 Mantine + T3 Stack Starter Kit</Text>
-      </Center>
-
-      <Center>
-        <Text>Edit <Code>src/app/page.tsx</Code> to get started</Text>
-      </Center>
-    </>
-  )
+    <Flex
+      direction="column"
+      justify="center"
+      align="center"
+      gap="xl"
+      mih={"100vh"}
+    >
+      <Title size={42}>Project Pluto</Title>
+      <Image
+        src={"/content/undraw_spreadsheet_uj8z.svg"}
+        alt={"Spreadsheet image"}
+        width={500}
+        height={300}
+      />
+      <Button>Login</Button>
+    </Flex>
+  );
 }

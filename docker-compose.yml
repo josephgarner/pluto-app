@@ -8,8 +8,17 @@ services:
       args:
         NEXT_PUBLIC_CLIENTVAR: "clientvar"
     working_dir: /app
+    networks:
+      - pluto-network
+      - mongo-network
     ports:
       - "3000:3000"
     image: pluto-app
     environment:
       - DATABASE_URL=$DATABASE_URL
+
+networks:
+  pluto-network:
+    name: "pluto"
+  mongo-network:
+    name: "Mongo Network"
