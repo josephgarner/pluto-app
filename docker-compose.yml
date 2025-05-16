@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  app:
+  pluto-app:
     platform: "linux/amd64"
     build:
       context: .
@@ -10,7 +10,6 @@ services:
     working_dir: /app
     networks:
       - pluto-network
-      - mongo-network
     ports:
       - "3000:3000"
     image: pluto-app
@@ -25,6 +24,3 @@ services:
 networks:
   pluto-network:
     name: "Pluto Network"
-  mongo-network:
-    name: "Mongo Network"
-    external: true
