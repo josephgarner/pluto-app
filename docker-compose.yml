@@ -24,6 +24,7 @@ services:
 
 networks:
   pluto-network:
-    name: "pluto Network"
+    name: "Pluto Network"
   mongo-network:
     name: "Mongo Network"
+    external: true
