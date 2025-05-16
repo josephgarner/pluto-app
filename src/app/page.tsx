@@ -1,13 +1,7 @@
 import {
-  PasswordInput,
   Title,
   Flex,
-  Code,
-  Container,
-  Center,
   Button,
-  Stack,
-  TextInput,
 } from "@mantine/core";
 import Image from "next/image";
 
